@@ -55,7 +55,7 @@ printData()
 
 function printData(){
 
-let table1 = '<table border=2>';
+let table1 = '<table border=2 id="t">';
     table1 += '<tr><th>order image</th><th>customer name</th><th>food type</th><th>payment</th></tr>';
     array.map( ele => {
         var image = ele.orderImage;
@@ -90,15 +90,24 @@ console.log(array)
 
 
 // delete data in local storage
-let removeLocal=document.getElementById(`delete`)
-removeLocal.addEventListener(`click`,deleteLocal)
+// let removeLocal=document.getElementById(`delete`)
+// removeLocal.addEventListener(`click`,deleteLocal)
 
-function deleteLocal(){
-    localStorage.removeItem('array')
-    document.getElementById("list").innerHTML = " ";
+// function deleteLocal(){
+//     localStorage.removeItem('array')
+//     document.getElementById("list").innerHTML = " ";
 
 
 
+// }
+function delet1()
+{
+	var t = document.getElementById("t");
+	var  L =t.rows.length;
+	if(L!=1)
+	{
+		 document.getElementById("t").deleteRow(L-1);
+	}
 }
 
 

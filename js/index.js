@@ -20,7 +20,7 @@ console.log(true);
 
     }else{
         document.getElementById("errName").style.display = 'block'
-        document.getElementById("errName").innerHTML = "**The name is not valid" 
+        document.getElementById("errName").innerHTML = "The name is not valid mm" 
     }
     if(  Email.value.match(mailCon) ){
             b=true
@@ -28,7 +28,7 @@ console.log(true);
 
     }else{
         document.getElementById("errEmail").style.display = 'block'
-        document.getElementById("errEmail").innerHTML = "**The email is not valid"
+        document.getElementById("errEmail").innerHTML = "The email is not valid mm"
     }
  
     if(   Pass.value.match(checkPass) ){
@@ -37,13 +37,13 @@ console.log(true);
 
     }else{
         document.getElementById("match").style.display = 'block'
-        document.getElementById("match").innerHTML = "**The password does not match"
+        document.getElementById("match").innerHTML = "The password does not match mmmm"
     }
     if(  Pass.value ===  rePass.value ){
             f=true
     }else{
         document.getElementById("match").style.display = 'block'
-        document.getElementById("match").innerHTML = "**The password does not match"
+        document.getElementById("match").innerHTML = "The password does not match mmmm"
     }
     console.log(users);
 

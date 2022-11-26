@@ -68,7 +68,7 @@ h3 {
 table, th, td {
     border-color: rgb(49, 65, 128);
     margin: 0px auto;
-    border: none;
+    border: solid #314180 3px ;
     color: #314180;
     font-size: 20px;
     
